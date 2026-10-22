@@ -6,7 +6,7 @@
 #         ./install_mac_services.sh uninstall
 set -euo pipefail
 DIR="$(cd "$(dirname "$0")" && pwd)"
-BIND="${BIND:-192.168.64.1}"      # the Mac's address on the UTM shared network
+BIND="${BIND:-}"      # the Mac's address on the UTM shared network
 PORT="${PORT:-8443}"
 EVERY="${EVERY:-120}"
 PY="$(command -v python3)"
